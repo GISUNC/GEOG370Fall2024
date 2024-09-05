@@ -31,5 +31,6 @@ var schedule = {
   "Wed Nov 27 2024": "No Classes",
   "Mon Dec 02 2024": "Topography and elevation models",
   "Wed Dec 04 2024": "RECAP",
-  "Check official calendar": "Final Exam"
+  "Check official calendar": "Final Exam",
+  "version":"Sept 5 2024"
 }

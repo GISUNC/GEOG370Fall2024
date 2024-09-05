@@ -2,8 +2,8 @@ var daLinks = {
     data:{
         'dataV1':"https://adminliveunc-my.sharepoint.com/:f:/g/personal/jarce_ad_unc_edu/Ekb7PAhH14BNvH9GgtRgfPoBeQxwQYPvA6bh9T9hS-EShw?e=lZprQE",
         'practiceEx1':"https://adminliveunc-my.sharepoint.com/:b:/g/personal/jarce_ad_unc_edu/Eb6277SjUKFLmeWU0YQR7ZcBrMm--CbCuHOpT3l0QgB3QQ?e=cXlQvV",
-        'dataSakaiSec2_01': "https://sakai.unc.edu/x/VNoljL",
-        'dataSakaiSec2_02': "https://sakai.unc.edu/x/VNoljL",
+        'dataSakaiSec2_01': "../practice_exercises/Worldprojections.zip",
+        'dataSakaiSec2_02': "../practice_exercises/Worldprojections.zip",
         'dataSec4':"https://sakai.unc.edu/x/cVvPNn",
         'dataSec5':"https://sakai.unc.edu/x/M1qNBg",
         'dataSec6':"https://sakai.unc.edu/x/Eyvd8E",

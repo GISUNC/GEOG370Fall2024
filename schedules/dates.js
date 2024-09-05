@@ -138,11 +138,19 @@ var UNCdates = {
     },
 
 
-    makeTable(daTopic, daDateString)
+    makeTable(daTopic, daDateString, color)
         { 
         // daTable = document.getElementById(tableID)
-        // console.log(daTable)    
+        // console.log(daTable)
+        let daTrBackgroundColor = 'white'    
+        if (color === true) {console.log('coloring week ' + this.checkWeek(daDateString))}
         const tr = document.createElement('tr');
+        if (this.checkWeek(daDateString) > 0) {daTrBackgroundColor = 'gray'}
+        else if (this.checkWeek(daDateString) == 0) {daTrBackgroundColor = 'yellow'}
+        else if (this.checkWeek(daDateString) < 0) {daTrBackgroundColor = 'lightblue'}
+        tr.style.backgroundColor = daTrBackgroundColor
+        
+        
         const thDay = document.createElement('td');
         const thActivity = document.createElement('td');
         thDay.innerHTML = daDateString
@@ -202,7 +210,24 @@ var UNCdates = {
                 }
             }
         }
-}
+},
+    checkWeek(targetDateStr) { // from ChatGPT with edits so it actually works
+            const currentDate = new Date();
+            const targetDate = new Date(targetDateStr);
+        
+            // Get the start of the current week (Monday)
+            const startOfCurrentWeek = new Date(currentDate);
+            startOfCurrentWeek.setDate(currentDate.getDate() - currentDate.getDay() + 1);
+        
+            // Get the start of the target week (Monday)
+            const startOfTargetWeek = new Date(targetDate);
+            startOfTargetWeek.setDate(targetDate.getDate() - targetDate.getDay() + 1);
+        
+            // Calculate the difference in weeks
+            const oneWeekInMilliseconds = 7 * 24 * 60 * 60 * 1000;
+            const differenceInWeeks = Math.round((startOfCurrentWeek - startOfTargetWeek) / oneWeekInMilliseconds);
+            return differenceInWeeks
+    }
 }
 
 // UNCdates.sumDates()

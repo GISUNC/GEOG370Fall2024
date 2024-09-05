@@ -27,11 +27,13 @@
 
 </body>
 <script>
+  // TO DO
+    // Welcome today is Date and this week we are working on topic 1 and Topic 2. 
         var daObj = {} // I need this since the method that I am using requires this variable
         var daTable = document.getElementById('schedule-table')
         Object.keys(schedule).forEach((e)=>{
             if (e != 'version'){
-            UNCdates.makeTable(schedule[e],e)}
+            UNCdates.makeTable(schedule[e],e,true)}
         })
         document.getElementsByTagName('title')[0].innerHTML = 'Schedule GEOG370 ' + UNCdates.semester + UNCdates.year + " v." +schedule['version']
         
