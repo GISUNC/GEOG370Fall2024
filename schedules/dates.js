@@ -25,7 +25,7 @@ var UNCdates = {
         'hw4':14,
         'hw5':7,
         // 'hw6pt1':7,
-        'hw6pt2':7,
+        'hw6':7,
         'hw7': 14, // fall break
         'hw8':7,
         'hw9':7,
