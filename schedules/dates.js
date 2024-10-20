@@ -48,9 +48,9 @@ var UNCdates = {
             day14: 'Apply classification and ratios to your data',
             day15: 'Vector Spatial Analysis',
             day16: 'Introduction to Rasters and to GEE',
-            day17: 'Practical Quiz 3',//
+            day17: 'Color Theory and Practice for Quiz 3',//
             day18: 'Cartography / Vector Spatial Analysis Practice',
-            day19: 'Color Theory',//'Introduction to Rasters and to GEE',
+            day19: 'Practical Quiz 3',//'Introduction to Rasters and to GEE',
             day20: 'Present your maps HW7 & HW8',
             day21: 'Intro to remote sensing pt1',
             day22: 'Intro to remote sensing pt2',
